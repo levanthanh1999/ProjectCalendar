@@ -1,0 +1,107 @@
+.right {
+    .rights {
+        margin: 20px;
+        color: white;
+        & .btn {
+            margin-left: 5px;
+            border:none;
+            background-color: transparent;
+            cursor: pointer;
+            &:hover {
+                background-color: black;
+            }
+
+        }
+        & .title-postsettings {
+            padding: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & .title-postting{
+                color:white;
+            }
+        }
+        & .Image {
+            margin-top: 20px;
+            text-align: center;
+            & .image1{
+                width: 276px;
+                border-radius: 10%;
+            }
+        }
+        & .title-of-posting {
+        
+            & .sub-des{
+                margin-top: 20px;
+                & #textarea {
+                    background-color: #303952;
+                    border-radius: 12px;
+                    padding: 5px;
+                    color: white;
+                    text-decoration-style: none !important ;
+                    resize: none;
+                    border-color:#151419;
+                }
+            }
+        }
+
+        & .title-of-posting {
+            color:white;
+            margin-top: 20px;
+            position: relative;
+            display: block;
+            & .tag-info {
+                color:white;
+                flex-direction: column;
+            }
+            & .date {
+                display: flex;
+                margin-bottom: 10px;
+                & .title-date {
+                    margin-top: 4px;
+                    color: white;
+                }
+            }
+        }
+        & .date-of-time1 {
+            display: flex;
+            top: 30px;
+            color: white;
+            margin-bottom: 10px;
+            & .ant-picker {
+                border-radius: 15px;
+                background-color: #151419;
+                color:white;
+            }
+            & .ant-picker-input-placeholder {
+                color:white;
+            }
+            
+            & .dot {
+                margin: 5px 10px 0 10px;
+            }
+        }
+        .btn-tags {
+            & .btn-tag {
+                color: white;
+                background: linear-gradient(90deg, rgba(63,94,251,1) 20%, rgba(252,70,107,1) 77%);
+                // width: 30%;
+                padding: 10px 35px;
+                border-radius: 25px;
+                margin: 5px;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    background-color: #777 !important;
+                    opacity: 0.8;
+                }
+        }
+        }
+
+        .ant-picker-input>input {
+            color: #fff;
+        }
+        
+    }
+}
