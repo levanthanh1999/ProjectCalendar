@@ -145,12 +145,11 @@
 .calender {
     margin-top: 30px;
     color: white;
-    
     & .fc {
         & .fc-col-header-cell {
             background-color: #081533 !important;
         }
-
+        
         & td {
             border: 1px solid #26282e;
         }
@@ -177,9 +176,9 @@
             position: absolute;
             background-color: #081533;
             border: none;
-            top: 26px;
+            top: 80px;
             left: 10px;
-       }
+        }
 
        & .fc-scrollgrid-section {
             &>td,

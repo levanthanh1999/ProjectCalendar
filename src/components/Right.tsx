@@ -5,6 +5,7 @@ import SettingsImage from "./SettingsImage";
 import TitlePosting from "./TitlePosting";
 import SelectDateTime from "./SelectDateTime";
 import TagList from "./TagList";
+import CloseRight from "./CloseRight";
 
 const Right = () => {
 
@@ -20,7 +21,7 @@ const Right = () => {
       <div className='TitlePosting'> 
         <TitlePosting />
       </div>
-      
+
       <div className="title-of-posting">
         <SelectDateTime />
         <TagList />
