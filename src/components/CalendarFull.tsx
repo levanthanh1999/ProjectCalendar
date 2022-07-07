@@ -28,8 +28,13 @@ const CalendarFull = () => {
               {
                 title: "Event 2",
                 description: "asdasdasd",
-                date: "2022-07-05",
+                date: "2022-07-23",
               },
+              {
+                title: "Event 3",
+                description: "asdasdasd",
+                date: "2022-07-15",
+              }
             ]}
             eventContent={RenderEventContent}
           />

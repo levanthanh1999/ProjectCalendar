@@ -146,35 +146,29 @@
                 & .fc-col-header-cell {
                     background-color: #081533 !important;
                 }
-                & th {
-                    border:none
-                }
-                & td
-                {
+
+                & td {
                     border: 1px solid #26282e;
                 }
-                & .fc-col-header-cell-cushion  {
-                    // color: #fff;
-                }
-                & .fc-scrollgrid-liquid, .fc-scrollgrid {
-                   border-radius: 30px;
+
+                & th, .fc-scrollgrid-liquid, .fc-scrollgrid {
                    border: none;
                 }
-                & .fc-daygrid-day-number {
+
+                & .fc-daygrid-day-number,
+                .fc-toolbar-title {
                     color: #fff;
                 }
-                & .fc-toolbar-title {
-                    color: white;
-                }   
+
                 & .fc-day-sat, 
-                .fc-day-sun
-                {
+                .fc-day-sun {
                     background: #020a1b;
                 }
-                & .fc-button-group, .fc-today-button
-                {
+
+                & .fc-button-group, .fc-today-button {
                     display: none;
                 }
+
                 & .fc-event-start {
                     position: absolute;
                     background-color: #081533;
@@ -182,18 +176,14 @@
                     top: 26px;
                     left: 10px;
                }
-               & .fc-scrollgrid-section {
 
+               & .fc-scrollgrid-section {
                     &>td,
                     .fc-scroller-harness-liquid {
                         border-radius: 30px;
                     }
                 }
-               
             }
-
         }
-
-
     }
 }
