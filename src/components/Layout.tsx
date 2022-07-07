@@ -1,14 +1,9 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Calender from '../Pages/Calender'
-
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Calender from "../Pages/Calender";
 
 const Layout = () => {
-  return (
-    <div className='container'>  
-      <Outlet />
-    </div>
-  )
-}
+  return <Outlet />;
+};
 
-export default Layout
+export default Layout;

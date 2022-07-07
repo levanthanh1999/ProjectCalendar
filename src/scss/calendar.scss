@@ -1,7 +1,6 @@
 .mid {
     & .middle {
         margin: 30px;
-
         .fc-highlight,
         .fc-day-today {
             background: linear-gradient(90deg, rgba(197, 89, 255, 0.01724439775910369) 6%, rgba(4, 25, 238, 0.5438550420168067) 89%);
@@ -16,8 +15,8 @@
                 border: none;
                 cursor: pointer;
                 border-radius: 50%;
-                width:50px;
-                height: 50px;
+                width: 65px;
+                height: 65px;
                 background-color: #634cff;
                 color: white;
                 &:hover {
@@ -27,7 +26,7 @@
             }
 
             & .avatar {
-                width: 5%;
+                width: 4%;
                 margin: 5px;
                 border-radius: 50%;
                 background-size: cover;
@@ -75,7 +74,8 @@
                 padding: 10px;
                 background-color: #303952;
                 border-radius: 15px;
-                width: 50%;
+                width: 40%;
+                margin-right: 20px;
 
                 & .checkin-title {
                     color: white;
@@ -85,12 +85,12 @@
                     display: flex;
 
                     & .profile {
-                        width: 70%;
+                        width: 75%;
                         display: flex;
                         margin-left: 8px;
 
                         & .img-profile {
-                            width: 18%;
+                            width: 15%;
                             margin-left: -10px;
                             border-radius: 15px;
                         }
@@ -105,7 +105,7 @@
             & .scheduled-for-today {
                 border-radius: 15px;
                 margin: 0 20px;
-                width: 25%;
+                width: 30%;
                 background-color: #303952;
                 padding: 10px;
                 display: flex;
@@ -138,51 +138,53 @@
 
         }
 
-        & .calender {
-            margin-top: 30px;
-            color: white;
-            
-            & .fc {
-                & .fc-col-header-cell {
-                    background-color: #081533 !important;
-                }
+    }
+}
 
-                & td {
-                    border: 1px solid #26282e;
-                }
 
-                & th, .fc-scrollgrid-liquid, .fc-scrollgrid {
-                   border: none;
-                }
+.calender {
+    margin-top: 30px;
+    color: white;
+    
+    & .fc {
+        & .fc-col-header-cell {
+            background-color: #081533 !important;
+        }
 
-                & .fc-daygrid-day-number,
-                .fc-toolbar-title {
-                    color: #fff;
-                }
+        & td {
+            border: 1px solid #26282e;
+        }
 
-                & .fc-day-sat, 
-                .fc-day-sun {
-                    background: #020a1b;
-                }
+        & th, .fc-scrollgrid-liquid, .fc-scrollgrid {
+           border: none;
+        }
 
-                & .fc-button-group, .fc-today-button {
-                    display: none;
-                }
+        & .fc-daygrid-day-number,
+        .fc-toolbar-title {
+            color: #fff;
+        }
 
-                & .fc-event-start {
-                    position: absolute;
-                    background-color: #081533;
-                    border: none;
-                    top: 26px;
-                    left: 10px;
-               }
+        & .fc-day-sat, 
+        .fc-day-sun {
+            background: #020a1b;
+        }
 
-               & .fc-scrollgrid-section {
-                    &>td,
-                    .fc-scroller-harness-liquid {
-                        border-radius: 30px;
-                    }
-                }
+        & .fc-button-group, .fc-today-button {
+            display: none;
+        }
+
+        & .fc-event-start {
+            position: absolute;
+            background-color: #081533;
+            border: none;
+            top: 26px;
+            left: 10px;
+       }
+
+       & .fc-scrollgrid-section {
+            &>td,
+            .fc-scroller-harness-liquid {
+                border-radius: 30px;
             }
         }
     }

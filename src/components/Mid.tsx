@@ -20,9 +20,6 @@ const Mid = () => {
         <div className="information">
           <InfomationMid />
         </div>
-        <div className="calender">
-          <CalendarFull />
-        </div>
       </div>
     </div>
   );
