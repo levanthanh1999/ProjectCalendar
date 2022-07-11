@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import CalendarFull from "../components/CalendarFull";
 import Mid from "../components/Mid";
 import Right from "../components/Right";
-import CloseRight from "../components/CloseRight";
+
+interface ISchedule {
+  title: string;
+  description: string;
+  date: string;
+}
 
 const Calender = () => {
   const [showCalendar, setShowCalendar] = useState(false);
@@ -15,12 +20,23 @@ const Calender = () => {
     setShowCalendar(false);
   }
 
+  const arrEvent: ISchedule[] = [
+    {
+      title: "Event 1",
+      description: "description",
+      date: "2022-07-10",
+    },
+  ];
+
   return (
     <>
       <div className="mid">
         <Mid />
         <div className="middle">
-          <CalendarFull onDateClick={(e) => handleDateClick(e)} />
+          <CalendarFull
+            onDateClick={(e) => handleDateClick(e)}
+            events={arrEvent}
+          />
         </div>
       </div>
 

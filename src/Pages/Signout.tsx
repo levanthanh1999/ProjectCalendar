@@ -1,6 +1,8 @@
 import React from 'react'
 import { LogoutOutlined } from '@ant-design/icons'
 import  avt1  from '../assets/avt1.jpg'
+import Button from '../components/Button'
+
 
 const Signout = () => {
   return (
@@ -9,7 +11,11 @@ const Signout = () => {
         <h3 className='box-name'>Name</h3>
         <p>Email</p>
       <div className='btn'>
-      <button className='btn-signout'><LogoutOutlined /> Signout</button>
+        
+        <Button
+  
+        type='button'><LogoutOutlined /> Signout</Button>
+    
       </div>
     </div>
   )

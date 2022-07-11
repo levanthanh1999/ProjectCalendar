@@ -43,28 +43,23 @@
     }
     
     & .btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      & .btn-signout {
-        display: flex;
-        align-items: center;
-        padding: 20px;
-        height: 20px;
-        border-radius: 30px;
-        width: 100%;
-        background-color: #634cff;
-        color: white;
-        border: none;
-        & .anticon-logout {
-          margin-right: 6px;
-        }
-        &:hover {
-          background-color: #777;
-          color: #634cff;
-          }
-        }
+      & .anticon-logout {
+        margin-right: 6px;
+      }
+      // &button:hover {
+      //   // background-color: pink !important;
+      //   // padding: 20px;
+      //   // height: 20px;
+      //   // border-radius: 30px;
+      //   // width: 100%;
+      //   // border: none;
+      //   // color: white;
+   
+      //   // &:hover {
+      //   //   background-color: #777;
+      //   //   color: #634cff;
+      //   //   }
+      //   }
       }
 
       /* Logo  */

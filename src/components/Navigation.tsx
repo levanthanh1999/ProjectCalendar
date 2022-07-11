@@ -1,17 +1,27 @@
 import { DashboardFilled, CalendarFilled, FileSearchOutlined, MinusSquareOutlined, AlignLeftOutlined, SettingOutlined, LogoutOutlined } from "@ant-design/icons";
 import { Link, NavLink } from "react-router-dom";
 
+
+// interface TypeActive 
+//     {
+//         dashboard = '/dashboard'
+//     }
+
 interface ListNav {
     name: string,
     icon: any,
     path: string,
+    // type: TypeActive[]
 }
+
+
 
 const ListNav: ListNav[] = [
     {
         name: "Dashboard",
         icon: <DashboardFilled />,
         path: "/dashboard"
+        
     },
     {
         name: "Calender",
