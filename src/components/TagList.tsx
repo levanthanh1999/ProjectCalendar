@@ -14,7 +14,6 @@ const TagList = () => {
           <h4 className="title-date"> Tags </h4>
           <div className="btn-tags">
            <TagButtonGroup tagButton={tagButton} />
-    
           </div>
         </div>
     </>
@@ -22,3 +21,4 @@ const TagList = () => {
 }
 
 export default TagList
+

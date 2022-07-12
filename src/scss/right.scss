@@ -1,5 +1,6 @@
 .right {
     position: relative;
+
     & .btn-closeRight {
         position: absolute;
         top: 0;
@@ -10,6 +11,7 @@
         cursor: pointer;
         border-radius: 10px;
         margin: 10px;
+
         &:hover {
             background-color: #777;
         }
@@ -18,107 +20,127 @@
     .rights {
         margin: 20px;
         color: white;
-    
+
+        & .TitlePostSettings {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         & .btn {
             margin-left: 5px;
-            border:none;
+            border: none;
             background-color: transparent;
             cursor: pointer;
+
             &:hover {
                 background-color: black;
             }
 
         }
-        & .title-postsettings {
+
+        & .title-postting {
             padding: 30px;
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            & .title-postting{
-                color:white;
+
+            & .title-postting {
+                color: white;
             }
         }
+
         & .Image {
             margin-top: 20px;
             text-align: center;
-            & .image1{
+
+            & .image1 {
                 width: 276px;
                 border-radius: 10%;
             }
         }
-        & .title-of-posting {
-        
-            & .sub-des{
-                margin-top: 20px;
-                & #textarea {
-                    background-color: #303952;
-                    border-radius: 12px;
-                    padding: 5px;
-                    color: white;
-                    text-decoration-style: none !important ;
-                    resize: none;
-                    border-color:#151419;
-                }
-            }
-        }
 
         & .title-of-posting {
-            color:white;
+            color: white;
             margin-top: 20px;
-            position: relative;
             display: block;
+            &:hover {
+               color: black;
+               cursor: pointer;
+            }
             & .tag-info {
-                color:white;
+                color: white;
                 flex-direction: column;
             }
+
             & .date {
                 display: flex;
                 margin-bottom: 10px;
+
                 & .title-date {
                     margin-top: 4px;
                     color: white;
                 }
             }
         }
+
+        & .sub-des {
+           margin: 10px 0 10px 0;
+            & #description {
+                width: 100%;
+                background-color: #303952;
+                border-radius: 12px;
+                padding: 5px;
+                color: rgb(245, 206, 99);
+                text-decoration-style: none !important;
+                resize: none;
+                border-color: none;
+            }
+        }
+
         & .date-of-time1 {
             display: flex;
             top: 30px;
             color: white;
-            margin-bottom: 10px;
+            margin: 10px 0 10px 0;
+
             & .ant-picker {
                 border-radius: 15px;
                 background-color: #151419;
-                color:white;
+                color: white;
             }
+
             & .ant-picker-input-placeholder {
-                color:white;
+                color: white;
             }
-            
+
             & .dot {
                 margin: 5px 10px 0 10px;
             }
         }
+
         .btn-tags {
-            & .ant-tag{
+            & .ant-tag {
                 color: white;
-                background: linear-gradient(90deg, rgba(63,94,251,1) 20%, rgba(252,70,107,1) 77%);
+                background: linear-gradient(90deg, rgba(63, 94, 251, 1) 20%, rgba(252, 70, 107, 1) 77%);
                 // width: 30%;
                 padding: 10px 30px;
                 border-radius: 25px;
                 margin: 5px;
                 border: none;
                 cursor: pointer;
+
                 &:hover {
                     background-color: #777 !important;
                     opacity: 0.8;
                 }
-        }
+            }
         }
 
         .ant-picker-input>input {
             color: #fff;
         }
-        
+
     }
 }
