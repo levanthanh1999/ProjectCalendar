@@ -10,7 +10,7 @@ interface Button {
 const Button = ({type, children}:Button) => {
   return (
     <>
-        <ButtonStyle type={type}> {children}  </ButtonStyle>
+        <ButtonStyle type={type}> {children} </ButtonStyle>
     </>
   )
 }

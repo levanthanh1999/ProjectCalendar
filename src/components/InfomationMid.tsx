@@ -11,7 +11,7 @@ const InfomationMid = () => {
             <h3 className="checkin-title">Last Monsth Highlights</h3>
             <div className="check">
               <div className="profile">
-                {DataUser.map((user,index) =>  <img key={index} src={avt1} alt="img-profile" className="img-profile" />)}
+                {DataUser.map((user,index) =>  <img key={index} src={user.avatar} alt="img-profile" className="img-profile" />)}
               </div>
 
               <div className="checkout">

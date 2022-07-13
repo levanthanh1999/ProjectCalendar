@@ -145,11 +145,15 @@
 .calender {
     margin-top: 30px;
     color: white;
+    position: relative;
     & .fc {
+        .fc-event-main {
+            position: absolute;
+        }
         & .fc-col-header-cell {
             background-color: #081533 !important;
         }
-        
+      
         & td {
             border: 1px solid #26282e;
         }
