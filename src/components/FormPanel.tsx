@@ -22,22 +22,22 @@ import styled from "styled-components";
 import { RootState } from "../redux/rootReducer";
 import { useSelector } from "react-redux";
 
-const BtnSubmit = styled(ButtonStyle)`
-  padding: 20px 30px;
-  height: 15px;
-  margin: 20px;
-  float: right;
-`;
+// const BtnSubmit = styled(ButtonStyle)`
+//   padding: 20px 30px;
+//   height: 15px;
+//   margin: 20px;
+//   float: right;
+// `;
 
 const contentStyle: React.CSSProperties = {
-  borderRadius: "30px",
-  height: "200px",
+  borderRadius: "50px",
+  height: "180px",
   color: "#fff",
-  lineHeight: "160px",
+  // lineHeight: "160px",
   textAlign: "center",
   background: "#364d79",
-  margin: "50px",
-  width: "80%",
+  margin: '50px',
+  width: '80%',
 };
 
 const StyledTextareaField = (props: any) => (
@@ -55,10 +55,8 @@ interface FormPanelValuesProps {
 }
 
 export const FormPanelProps: React.FC<{}> = () => {
-  const imageSource = useSelector(
-    (state: RootState) => state.valueImage.imageSource
-  );
-  console.log("21", imageSource);
+  const imageSource = useSelector((state: RootState) => state.valueImage.imageSource)
+  const desSource = useSelector((state: RootState) => state.valueImage.desSource)
 
   const onChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     console.log("Change:", e.target.value);
@@ -83,8 +81,8 @@ export const FormPanelProps: React.FC<{}> = () => {
           </label>
           <Carousel autoplay>
             {imageSource.map((img, index) => (
-              <div>
-                {<img key={index} src={img} style={contentStyle} />}
+              <div key={index}>
+                {<img src={img} style={contentStyle} />}
               </div>
             ))}
           </Carousel>
@@ -95,7 +93,7 @@ export const FormPanelProps: React.FC<{}> = () => {
           <div className="sub-des">
             <StyledTextareaField
               as={Field}
-              defaultValue="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores sit, illum dicta, magnam quas velit earum rerum aut totam fugiat atque, mollitia praesentium aperiam doloremque in natus minima voluptas non!"
+              defaultValue={desSource}
               id="description"
               name="description"
               rows={4}
@@ -113,8 +111,8 @@ export const FormPanelProps: React.FC<{}> = () => {
           <div className="btn-tags">
             <TagButtonGroup tagButton={tagButton} />
           </div>
-
-          <BtnSubmit type="submit">Submit</BtnSubmit>
+{/* 
+          <BtnSubmit type="submit">Submit</BtnSubmit> */}
         </Form>
       </Formik>
     </div>

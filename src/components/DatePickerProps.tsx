@@ -2,17 +2,20 @@ import React, { useState } from 'react'
 import  { DatePicker, DatePickerProps, TimePicker }  from "antd";
 import moment from 'moment';
 import type { Moment } from 'moment';
-const timeFormat = 'hh:mm';
+import { useSelector } from 'react-redux';
+import { RootState } from '../redux/rootReducer';
+
 
 const DatePickerProp = () => {
     const [dates, setDates] = useState<string>('')
     const [value, setValue] = useState<Moment | null>(null);
 
+    const dateSource = useSelector((state:RootState) => state.valueImage.dateSource)
+  
     const date = new Date()
-    // console.log(date.toLocaleTimeString())
 
     const onChange = (a: any, time: any) => {
-      setValue(time)
+        setValue(time)
     };
 
     const onChanged: DatePickerProps['onChange'] = (date, dateString) => {
@@ -24,7 +27,7 @@ const DatePickerProp = () => {
     <div className="date-of-time1">
               <DatePicker 
                 // value={moment(dates)}
-                defaultValue= {moment(date.toLocaleDateString(), 'DD-MM-YYYY')}
+                defaultValue= {moment(dateSource)}
                 onChange={onChanged}
               />
               <span className="dot">&bull;</span>

@@ -4,7 +4,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import RenderEventContent from "./RenderEventContent";
 import interactionPlugin from "@fullcalendar/interaction";
 import { useDispatch } from "react-redux";
-import { saveValueImage } from "../redux/reducers/ValueImage";
+import { saveDate, saveDes, saveValueImage } from "../redux/reducers/ValueImage";
 
 interface ISchedule {
   title: string;
@@ -19,11 +19,12 @@ interface CalendarProps {
 
 const CalendarFull = ({ onDateClick, events }: CalendarProps) => {
   const dispatch = useDispatch();
-  const [valueImage, setValueImage] = useState<any>("");
 
   const onDateClicked = (e: any) => {
     var selectId = "1";
     onDateClick(selectId);
+    dispatch(saveDate(e.dateStr))
+    console.log(e.dateStr)
   };
 
   console.log(events);
@@ -31,6 +32,8 @@ const CalendarFull = ({ onDateClick, events }: CalendarProps) => {
   const valueEvent = (e: any) => {
     //console.log(e.event._def.extendedProps.avt)
     // setValueImage(e.event._def.extendedProps.avt);
+    dispatch(saveDes(e.event._def.extendedProps.description))
+    // dispatch(saveDate())
     dispatch(saveValueImage(e.event._def.extendedProps.avt))
   }
 

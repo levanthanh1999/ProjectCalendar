@@ -32,15 +32,15 @@ const Calender = () => {
   const arrEvent: ISchedule[] = [
     {
       id: 1,
-      title: "Event 1",
-      description: "description",
+      title: "Cat 1",
+      description: "Cat Black, Cat Gold, Cat Gray, Cat Black Gray",
       date: "2022-07-10",
-      avt: [avt1, avt2, avt3, avt4],
+      avt: [avt1],
     },
     {
       id: 2,
-      title: "Event 2",
-      description: "description",
+      title: "Cat 2",
+      description: "Cat Black, Cat Gold, Cat Gray, Cat Black Gray 2",
       date: "2022-07-13",
       avt: [avt1, avt2, avt3, avt4],
     }
